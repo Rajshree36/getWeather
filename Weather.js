@@ -23,23 +23,23 @@ async function checkWeather(city) {
 
     if(data.weather[0].main == 'Clouds')
     {
-weatherIcon.scr ="images/clouds.png"
+weatherIcon.src ="images/clouds.png"
     }
     else if(data.weather[0].main == 'Drizzle')
     {
-        weatherIcon.scr ="images/drizzle.png"
+        weatherIcon.src ="images/drizzle.png"
     }
     else if(data.weather[0].main == 'Mist'){
-        weatherIcon.scr ="images/mist.png"
+        weatherIcon.src ="images/mist.png"
     }
     else if(data.weather[0].main == 'Rain'){
-        weatherIcon.scr ="images/rain.png"
+        weatherIcon.src ="images/rain.png"
     }
     else if(data.weather[0].main == 'Clear'){
-        weatherIcon.scr ="images/clear.png"
+        weatherIcon.src ="images/clear.png"
     }
     else{
-        weatherIcon.scr ="images/snow.png"
+        weatherIcon.src ="images/snow.png"
     }
 
     document.querySelector(".weather").style.display ='block';
